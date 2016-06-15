@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="90"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+
+    <ImageView
+        android:layout_weight="40"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/call_recording" />
+
+    <TextView
+        android:id="@+id/auto_recoriding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_weight="7"
+        android:background="@drawable/border_background"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Recorder Setting"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/auto_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_weight="7"
+        android:background="@drawable/border_background"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Auto Call Recorder"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_weight="7"
+        android:background="@drawable/border_background"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="User Guide "
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_weight="7"
+        android:background="@drawable/border_background"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="About"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

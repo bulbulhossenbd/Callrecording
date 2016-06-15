@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_section_recordings">Nagrania</string>
+    <string name="title_section_options">Opcje Nagrywania</string>
+    <string name="title_section_settings">Ustawienia</string>
+    <string name="title_section_contacts">Kontakty</string>
+
+    <!-- Strings related to options fragment -->
+    <string-array name="options_mode_array">
+        <item>Nagrywaj Wszystko</item>
+        <item>Nagrywaj Tylko Wybrane</item>
+    </string-array>
+
+    <string name="options_header_text">Nagrywanie rozmów jest:</string>
+    <string name="options_toggle_button_off">wyłączone</string>
+    <string name="options_toggle_button_on">włączone</string>
+    <string name="options_exceptions">Wyjątki:</string>
+    <string name="options_add_exceptions_button">Dodaj Wyjątek</string>
+    <string name="options_recorded">Nagrywane:</string>
+    <string name="options_add_recorded_button">Dodaj do nagrywanych</string>
+    <string name="options_dialog_add_number_button">Dodaj z numeru</string>
+    <string name="options_dialog_add_from_contacts_button">Dodaj z kontaktów</string>
+    <string name="options_dialog_add_number_hint">Wpisz numer</string>
+    <string name="options_dialog_add_number_title">Dodaj numer</string>
+    <string name="options_empty_everything_text">Nie dodałeś żadnego wyjątku. Wszystkie rozmowy będą nagrywane</string>
+    <string name="options_empty_selected_text">Nie dodałeś żadnego kontaktu do nagrywania. Żadne połączenie nie będzie nagrywane.</string>
+
+    <!-- Strings related to recrodings fragmnet -->
+    <string name="recording_empty_text">Nie masz jeszcze żadnych nagrań</string>
+
+    <!-- String related to recording detail fragment -->
+    <string name="recording_detail_delete_button">Usuń</string>
+    <string name="recording_detail_share_button">Wyślij</string>
+    <string name="recording_detail_add_notes">Dodaj notatki</string>
+    <string name="recording_detail_alert_title">Błąd przy nagrywaniu</string>
+    <string name="recording_detail_alert_message">Nagranie tej rozmowy używając trybu %1$s nie powiodło się.
+        Nagranie zostało nagrane używając trybu Mikrofon. Twój telefon może nie obsługiwać nagrywania w trybie %2$s</string>
+
+
+    <!-- Strings related to contact fragment -->
+    <plurals name="contact_recording_number">
+        <item quantity="one">%1$d nagranie</item>
+        <item quantity="few">%1$d nagrania</item>
+        <item quantity="many">%1$d nagrania</item>
+        <item quantity="other">%1$d nagrań</item>
+    </plurals>
+    <string name="contact_empty_text">Żaden z twoich kontaktów nie został nagrany ani razu</string>
+
+    <!-- Strings related to contact detail fragment -->
+    <string name="contact_detail_add_contact_button">Dodaj kontakt</string>
+    <string name="contact_detail_status_recorded">Nagrywany</string>
+    <string name="contact_detail_status_not_recorded">Nie Nagrywane</string>
+    <string name="contact_detail_status_set_record">Nagrywaj</string>
+    <string name="contact_detail_status_set_not_record">Nie Nagrywaj</string>
+
+    <string name="title_activity_contact_detail">Szczegóły kontaktu</string>
+
+
+    <!-- Strings related to delete alert dialog -->
+    <string name="delete_alert_title">Czy na pewno chcesz usunąć </string>
+    <string name="delete_alert_message">To także skasuje pliki zawierające nagranie</string>
+    <string name="delete_delete_text">Skasuj</string>
+
+    <!-- Strings related to preferences -->
+    <string name="pref_category_general">Główne</string>
+    <string name="pref_recording_source">Źródło Nagrywania</string>
+    <string name="pref_recording_format">Format Nagrywania</string>
+    <string name="pref_increase_volume">Zwiększ Głośność</string>
+    <string name="pref_increase_volume_summary">Zwiększ głośność w trakcie każdej rozmowy</string>
+    <string name="pref_recording_path">Scieżka Nagrywania</string>
+
+    <string name="pref_category_notifications">Powiadomienia</string>
+    <string name="pref_notification_during_call">Podczas Rozmowy</string>
+    <string name="pref_notification_during_call_summary">Pokazuj powiadomienie kiedy rozmowa jest nagywana</string>
+    <string name="pref_notification_post_call">Po Rozmowie</string>
+    <string name="pref_notification_post_call_summary">Pokazuj powiadomienie o nagraniu rozmowy</string>
+
+    <!-- Strings related to recording service -->
+    <string name="service_notification_recording">Nagrywanie </string>
+    <string name="service_notification_call_recorded">Rozmowa została nagrana </string>
+
+    <!-- Strings related to launcher antivity -->
+    <string name="launcher_main_text">Nagrywanie rozmów w niektórych krajach bez uprzedzenia rozmówcy może być nielegalne.
+        Przed użyciem tej aplikacji pownineś zapoznać się z aktualnym stanem prawnym w twoim kraju.</string>
+    <string name="title_activity_launcher">Nota Prawna</string>
+
+    <!-- Strings related to Nothing -->
+    <string name="cancel">Anuluj</string>
+    <string name="selected">Wybrano: %1$d</string>
+
+
+</resources>

@@ -1,0 +1,115 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+
+    <string name="app_name">Smart Call Recorder</string>
+
+    <string name="title_section_recordings">Recordings</string>
+    <string name="title_section_options">Options</string>
+    <string name="title_section_settings">Settings</string>
+    <string name="title_section_contacts">Contacts</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <!-- Strings related to options fragment -->
+    <string-array name="options_mode_array">
+        <item>Record Everything</item>
+        <item>Record only selected</item>
+    </string-array>
+
+    <string name="options_header_text">Recording calls is currently:</string>
+    <string name="options_toggle_button_off">Off</string>
+    <string name="options_toggle_button_on">On</string>
+    <string name="options_exceptions">Exceptions</string>
+    <string name="options_add_exceptions_button">Add Exceptions</string>
+    <string name="options_recorded">Recorded</string>
+    <string name="options_add_recorded_button">Add Recorded</string>
+    <string name="options_dialog_add_number_button">Add Number</string>
+    <string name="options_dialog_add_from_contacts_button">Add From Contacts</string>
+    <string name="options_dialog_add_number_hint">Enter phone number</string>
+    <string name="options_dialog_add_number_title">Add phone number</string>
+    <string name="options_empty_everything_text">You didnt add any exceptions.\nEvery call will be recorded.</string>
+    <string name="options_empty_selected_text">You didnt add any contacts to record. Nothing will be recorded.</string>
+
+    <string name="title_activity_recording_detail">RecordingDetailActivity</string>
+
+    <!-- Strings related to recrodings fragmnet -->
+    <string name="recording_empty_text">You havent got any recordings</string>
+
+    <!-- String related to recording detail fragment -->
+    <string name="recording_detail_delete_button">Delete</string>
+    <string name="recording_detail_share_button">Share</string>
+    <string name="recording_detail_add_notes">Add notes</string>
+    <string name="recording_detail_alert_title">Recording source error</string>
+    <string name="recording_detail_alert_message">Recording using %1$s went wrong, recording
+        was recorded using Microphone. Your phone may not be able to record using %2$s</string>
+
+    <!-- Strings related to contact fragment -->
+    <plurals name="contact_recording_number">
+        <item quantity="one">%1$d recording</item>
+        <item quantity="other">%1$d recordings</item>
+    </plurals>
+    <string name="contact_empty_text">None of your contacts were recorded</string>
+    
+    <!-- Strings related to contact detail fragment-->
+    <string name="contact_detail_add_contact_button">Add Contact</string>
+    <string name="contact_detail_status_recorded">Recorded</string>
+    <string name="contact_detail_status_not_recorded">Not Recorded</string>
+    <string name="contact_detail_status_set_record">Record</string>
+    <string name="contact_detail_status_set_not_record">Not Record</string>
+    
+    <string name="title_activity_contact_detail">Contact Details</string>
+
+    <!-- Strings related to delete alert dialog -->
+    <string name="delete_alert_title">Are you sure you want to delete </string>
+    <string name="delete_alert_message">This wil also delte recoding file</string>
+    <string name="delete_delete_text">Delete</string>
+
+    <!-- Strings related to preferences -->
+    <string name="pref_category_general">General</string>
+    <string name="pref_recording_source">Recording Source</string>
+    <string name="pref_recording_format">Recording Format</string>
+    <string name="pref_increase_volume">Increase Volume</string>
+    <string name="pref_increase_volume_summary">Increase volume at every call</string>
+    <string name="pref_recording_path">Recording Path</string>
+
+    <string name="pref_category_notifications">Notifications</string>
+    <string name="pref_notification_during_call">During Call</string>
+    <string name="pref_notification_during_call_summary">Show notification when phone call is being recorded</string>
+    <string name="pref_notification_post_call">After Call</string>
+    <string name="pref_notification_post_call_summary">Show notification after phone call has been recorded</string>
+
+    <!-- Strings related to recording service -->
+    <string name="service_notification_recording">Recording </string>
+    <string name="service_notification_call_recorded">Call was recorded </string>
+
+    <!-- Strings related to launcher antivity -->
+    <string name="launcher_main_text">You should contact lawyer before using this app</string>
+    <string name="title_activity_launcher">Law Notes</string>
+
+    <!-- Strings related to Nothing -->
+    <string name="cancel">Cancel</string>
+    <string name="selected">Selected: %1$d</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="notification_title">Smart Call Manager Enabled</string>
+    <string name="notification_text">Select to Enable/Disable/Configure.</string>
+    <string name="usermanual">User Guide</string>
+	<string name="manual">
+	    1. If you click the Enable box, the service will be run on background.\n2. When you choose the caller option, the call will be received in that manner.\n3. By choosing the option "Set Delayer for Answering?", you can choose a delay time to response the call.\n4. You can choose Either Bluetooth or Loudspeaker through which the call will be received. Otherwise the call will be received without loudspeaker or headset.\n5. You can also click the box "Don't answer if in call" to prevent receiving call during a call.
+	    </string>
+    <string name="app">Developer Information</string>
+	<string name="develop">
+	    This Application is developed by Umme Tahera Huda and Shipu Shikder
+	</string>
+    <string name="supervision"><u>Supervised by :</u>  Md. Monir Hossain</string>
+    <string name="org"><b>Organization :</b> Dhaka City Collage </string>
+    <string name="TODO">todo</string>
+    <string name="textview_startup">Please choose if the application should record your calls.\nYou can always enable or disable recording by pressing the Android menu button.</string>
+
+
+</resources>

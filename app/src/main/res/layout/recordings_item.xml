@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/AppTheme"
+    >
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="6dp"
+
+        android:layout_margin="0dp"
+        android:layout_below="@+id/recordings_item_separator">
+
+        <RelativeLayout
+            android:id="@+id/recording_item_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="fitXY"
+                android:id="@+id/recording_item_contact_image"
+                android:src="@drawable/defult_contact_image"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="0dp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/recording_item_display_name_text"
+                android:layout_alignTop="@+id/recording_item_contact_image"
+                android:layout_toRightOf="@+id/recording_item_contact_image"
+                android:layout_toEndOf="@+id/recording_item_contact_image"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/recording_item_phone_text"
+                android:layout_alignBottom="@+id/recording_item_contact_image"
+                android:layout_alignLeft="@id/recording_item_display_name_text"
+                android:layout_toRightOf="@id/recording_item_contact_image"
+                android:layout_toEndOf="@+id/recording_item_contact_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Large Text"
+                android:id="@+id/recording_item_duration_text"
+                android:layout_alignBottom="@+id/recording_item_phone_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="4dp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/recording_item_call_image"
+                android:src="@drawable/call_arrow_outgoing"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/recording_item_time_text"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/recording_item_call_image"
+                android:layout_toStartOf="@+id/recording_item_call_image"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/recordings_item_separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bbdefb"
+        android:layout_marginBottom="4dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="poniedziałek 21 czerca"
+            android:id="@+id/recordins_item_separator_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

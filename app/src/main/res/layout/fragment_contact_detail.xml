@@ -1,0 +1,128 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.pgizka.simplecallrecorder.contacts.ContactDetailActivityFragment">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contact_detail_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="0dp"
+        >
+
+        <android.support.v7.widget.GridLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="2"
+            app:rowCount="4"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:id="@+id/contact_detail_main_image"
+                android:src="@drawable/defult_contact_image"
+                android:layout_margin="0dp"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowSpan="4"
+                app:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Marcin Biernat"
+                android:id="@+id/contact_detail_display_name_text"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="0"
+                app:layout_rowWeight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/contact_detail_phone_text"
+                android:layout_below="@+id/contact_detail_display_name_text"
+                android:layout_alignLeft="@+id/contact_detail_display_name_text"
+                android:layout_alignStart="@+id/contact_detail_display_name_text"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/contact_detail_add_contact_button"
+                android:id="@+id/contact_detail_add_contact_button"
+                app:layout_row="1"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/contact_detail_status_text"
+                android:layout_below="@+id/contact_detail_phone_text"
+                android:layout_alignLeft="@+id/contact_detail_phone_text"
+                android:layout_alignStart="@+id/contact_detail_phone_text"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Record"
+                android:id="@+id/contact_detail_change_status_button"
+                app:layout_row="3"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="center"
+                app:layout_rowWeight="1"
+                />
+
+        </android.support.v7.widget.GridLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_detail_list_view"
+        android:layout_below="@+id/contact_detail_card_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"
+        />
+
+
+</RelativeLayout>

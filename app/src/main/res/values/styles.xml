@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+        <!--
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item> -->
+
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionBarBacground</item>
+        <item name="background">@color/actionBarBacground</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <color name="actionBarBacground"> #2196f3</color>
+    <color name="itemSelected">#e3f2fd</color>
+    <color name="itemUnSelected">@android:color/transparent</color>
+
+</resources>

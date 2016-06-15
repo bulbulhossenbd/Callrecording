@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_general">
+
+        <ListPreference
+            android:title="@string/pref_recording_source"
+            android:entries="@array/settings_recording_source"
+            android:entryValues="@array/settings_recording_source_values"
+            android:defaultValue="0"
+            android:key="userRecordingSource">
+        </ListPreference>
+        <ListPreference
+            android:title="@string/pref_recording_format"
+            android:entries="@array/settigns_recording_format"
+            android:entryValues="@array/settings_redording_format_values"
+            android:defaultValue="0"
+            android:key="userRecordingFormat">
+        </ListPreference>
+        <!-- Currently turn on speaker not work
+        <CheckBoxPreference
+            android:title="Speaker Phone"
+            android:summary="Turn on Speaker Phone at every call"
+            android:defaultValue="false"
+            android:key="userTurnOnPhone">
+        </CheckBoxPreference>
+        -->
+        <CheckBoxPreference
+            android:title="@string/pref_increase_volume"
+            android:summary="@string/pref_increase_volume_summary"
+            android:defaultValue="true"
+            android:key="userTurnUpVolume">
+        </CheckBoxPreference>
+        <EditTextPreference
+            android:title="@string/pref_recording_path"
+            android:defaultValue="/sdcard/simpleCallRecorder"
+            android:key="userRecordingPath">
+        </EditTextPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_notifications">
+
+        <CheckBoxPreference
+            android:title="@string/pref_notification_during_call"
+            android:summary="@string/pref_notification_during_call_summary"
+            android:defaultValue="true"
+            android:key="userNotificationDuringCall" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:title="@string/pref_notification_post_call"
+            android:summary="@string/pref_notification_post_call_summary"
+            android:defaultValue="true"
+            android:key="userNotificationPostCall">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
